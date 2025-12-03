@@ -1,0 +1,84 @@
+
+ul.modelcars {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ul.modelcars li {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+
+img.photocar {
+    display: block;
+    width: 250px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1b357e;
+}
+
+.infocar div {
+    display: inline-block;
+}
+
+.info {
+    width: 200px;
+    vertical-align: top;
+}
+
+.textmodel {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #1351d8;
+    
+}
+.textprice {
+    display: block;
+    text-align: left;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* Previously this used an absolute positioned overlay. For the inline compare UI
+   we want a small, centered box below the car list. Keep a simple, responsive
+   inline style so it doesn't take over the whole viewport. */
+div#compare {
+    position: relative;
+    display: block; /* make the compare box participate in normal flow */
+    width: min(95%, 900px);
+    max-width: 900px;
+    min-width: 320px;
+    height: auto;
+    background: #fff;
+    margin: 12px auto;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(231, 7, 7, 0.12);
+}
